@@ -248,7 +248,7 @@
                         el = el.parentElement
                     }
                     var id = el.href.split('/')[el.href.split('/').length - 1]
-                    window.location.replace('http://127.0.0.1:5500/index.html#!/product/' + id)
+                    window.location.replace('https://tainhu.github.io/shopByAngularjs/index.html#!/product/' + id)
                     document.querySelector(".quick-review-wrapper").classList.remove("open")
                     $scope.product = $scope.fullSanpham.filter(x => x.$id == id)[0]
                     $scope.amount = 1
@@ -291,13 +291,13 @@
                 }
                 $scope.changeLoginPage = () => {
                     if (!$scope.user) {
-                        window.location.replace("http://127.0.0.1:5500/index.html#!/login")
+                        window.location.replace("https://tainhu.github.io/shopByAngularjs/index.html#!/login")
                     } else {
                         var confirm = window.confirm("Do you want logout?")
                         if (confirm) {
                             $scope.user = null
                             sessionStorage.removeItem("user")
-                            window.location.replace("http://127.0.0.1:5500/index.html#!/home")
+                            window.location.replace("https://tainhu.github.io/shopByAngularjs/index.html#!/home")
                         }
                     }
                 }
@@ -312,7 +312,7 @@
                                         sessionStorage.setItem("user", JSON.stringify($scope.user))
                                     }
                                     alert('thanh cong')
-                                    window.location.replace("http://127.0.0.1:5500/index.html#!/home")
+                                    window.location.replace("https://tainhu.github.io/shopByAngularjs/index.html#!/home")
                                     return
                                 }
                             }
